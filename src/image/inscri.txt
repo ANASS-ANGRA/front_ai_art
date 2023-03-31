@@ -1,0 +1,53 @@
+import axios from "axios"
+import { useState } from "react"
+import "./style/inscri.css"
+
+
+function Inscri(){
+   const[nom_c,setnom_c]=useState("")
+   const[nom_u,setnom_u]=useState("")
+   const[email,setemail]=useState("")
+   const[password ,setpassword]=useState("")
+   const[v_pass,setv_pass]=useState("")
+   const[erreur,seterreur]=useState("")
+
+  function Insription (){
+   
+       console.log(erreur)
+  }
+   
+   
+   
+   
+   
+   
+    return(
+        <div id="page_inscri">
+           
+            <div className="info_inscri" id="nom">
+                <label>Nom Complet :</label><br></br>
+                <input type="text" placeholder="nom complet" className="input_inscri" value={nom_c} onChange={(e)=> setnom_c(e.target.value)}  />
+            </div>
+            <div className="info_inscri" id="nom_utilisateur">
+                <label>Nom utilisateur :</label><br></br>
+                <input type="text" placeholder="nom utilisateu"  className="input_inscri" value={nom_u} onChange={(e)=> setnom_u(e.target.value)} />
+            </div>
+            <div className="info_inscri" id="email_inscri">
+                <label>Email :</label><br></br>
+                <input type="text" placeholder="exemple@gmail.com" className="input_inscri" value={email} onChange={(e)=> setemail(e.target.value)} />
+            </div>
+            <div className="info_inscri" id="password_insri">
+                <label>Password :</label><br></br>
+                <input type="text" placeholder="password" className="input_inscri" value={password} onChange={(e)=> setpassword(e.target.value)} />
+            </div>
+            <div className="info_inscri" id="valide_password_insri">
+                <label>Validation Password :</label><br></br>
+                <input type="text" placeholder="valide password" className="input_inscri" value={v_pass} onChange={(e)=> setv_pass(e.target.value)}/>
+            </div>
+            <button id="button_inscri" onClick={Insription}>inscription</button>
+            
+        </div>
+    )
+}
+
+export default Inscri

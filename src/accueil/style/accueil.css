@@ -9,19 +9,8 @@
 
 #title_accueil{
 position: absolute;
-width: 390px;
-height: 130px;
-left: 0px;
-top: 0px;
-
-font-family: 'Itim';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 77px;
-display: flex;
-align-items: center;
-text-align: center;
-
+background-color: #232323;
 color: #15DBFB;
+  width: 100%;
+    height: 120px;
 }

@@ -1,15 +1,24 @@
 import"./style/accueil.css"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter ,Router,  Route, Routes, Outlet } from "react-router-dom";
 import Principale from "./principale";
 import Login from "./login";
+import Inscri from "./inscri";
+import Title_accueil from "./Title_accueil";
+import Validation from "./validation";
 
 function Accueil(){
     return(
         <div id="accueil">
-          <h1 id="title_accueil">Ai art</h1>
-          <div>
-             <Login />
-          </div>
+      <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Title_accueil />}>
+      <Route index element={<Principale />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/inscri" element={<Inscri />} />
+      <Route path="/validation" element={<Validation />} />
+    </Route>
+  </Routes>
+</BrowserRouter>
         </div>
     )
 }

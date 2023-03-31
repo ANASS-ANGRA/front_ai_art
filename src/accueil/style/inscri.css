@@ -1,0 +1,55 @@
+#page_inscri{
+    position: absolute;
+    width: 44%;
+height: auto;
+left: 28%;
+top: 180px;
+background: #232323;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.info_inscri{
+
+ margin-top: 20px;
+
+}
+.info_inscri>label{
+    margin-left: 10%;
+    font-family: 'Itim';
+font-style: normal;
+font-weight: 400;
+font-size: 200%;
+line-height: 48px;
+
+color: #15DBFB;
+}
+.input_inscri{
+    margin-left: 10%;
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    font-size: 160%;
+}
+.input_inscri::placeholder{
+    color: rgba(255, 255, 255, 0.1);
+  }
+#button_inscri{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    width: 70%;
+height: 60px;
+border-radius: 5px;
+background: #15DBFB;
+font-family: 'Itim';
+font-style: normal;
+font-weight: 600;
+font-size: 200%;
+line-height: 58px;
+
+align-items: center;
+text-align: center;
+
+color: #232323;
+}  

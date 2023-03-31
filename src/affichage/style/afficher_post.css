@@ -1,0 +1,24 @@
+#afficher_post{
+  color: black;
+  margin-right: 0.1%;
+  margin-left: 20.1%;
+ min-height: 700px;
+
+}
+#tous_post{
+
+}
+#recherche_afficher_post{
+  font-family: 'Itim';
+  font-style: normal;
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+#input_recherche_post{
+  background: rgba(217, 217, 217, 0.1);
+  width: 60%;
+  height: 30px;
+  text-align: center;
+  font-size: 30px;
+}

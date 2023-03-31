@@ -1,5 +1,6 @@
 import "./style/principale.css"
 import im from "../image/accueil_principale.jpg"
+import { Link } from "react-router-dom"
 
 
 function Principale(){
@@ -13,17 +14,16 @@ function Principale(){
                       Nous sommes fiers d'offrir à nos utilisateurs un environnement de partage d'images convivial et respectueux. Nous encourageons nos utilisateurs à partager leur travail avec confiance, sachant que leur travail sera apprécié et respecté par notre communauté. Nous avons hâte de voir vos créations et de vous aider à les partager avec le monde entier.
                       Rejoignez notre communauté de créatifs en partageant vos images dès maintenant et découvrez la puissance de l'IA pour générer des images étonnantes. Merci de faire partie de notre communauté !
                      </p>
-
+              
                  </div>
-                 <div >
-                    <img src={im} id="image_principale" />
-                 </div>
+                 <img src={im} id="image_principale" />
             </div>
-            
-                <button className="button_accueil_pricipale" id="connection_accueil">connection</button>
-                <button className="button_accueil_pricipale">insription</button>
         </div>
     )
 }
 
 export default Principale
+ 
+ 
+     /* <button className="button_accueil_pricipale" id="connection_accueil"><Link to="login" >connection</Link> </button>                
+     <button className="button_accueil_pricipale"><Link to="inscri">insription</Link> </button>*/

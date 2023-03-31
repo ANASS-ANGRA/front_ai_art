@@ -1,8 +1,8 @@
 #page_login{
 position: absolute;
-width: 600px;
+width: 44%;
 height: 505px;
-left: 340px;
+left:28%;
 top: 180px;
 background: #232323;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -11,64 +11,66 @@ border-radius: 5px;
 }
 
 .info_login{
-    position: absolute;
-width: 702px;
+width: 100%;
 height: 158px;
 left: 50px;
+
 
 }
 
 .info_login>label{
-    position: absolute;
+margin-top: 10%;
+margin-left: 10%;
+
 font-family: 'Itim';
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
+font-size: 180%;
 line-height: 48px;
-align-items: center;
-text-align: center;
+
 color: #15DBFB;
 
-top: 40px;
-}
-.input_login{
-  position: absolute;
-  background: rgba(217, 217, 217, 0.1);
-  border-radius: 5px;
-  width: 450px;
-  height: 50px;
-  font-size: 25px;
 
 }
-#email_input_login{
-top: 90px;
+.input_login{
+ 
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 5px;
+  width: 80%;
+  height: 50px;
+  font-size: 25px;
+  margin-left: 10%;
+
 }
+
 .input_login::placeholder{
   color: rgba(255, 255, 255, 0.1);
 }
-#password{
-    top: 150px;
-}
-#password_input_login{
-    top: 100px;
-}
+
+
 .button_cn{
-position: absolute;
-width: 400px;
+margin-left:20% ;
+width: 60%;
 height: 60px;
 border-radius: 5px;
 background: #15DBFB;
-top: 340px;
-left: 80px;
+
 
 font-family: 'Itim';
 font-style: normal;
 font-weight: 600;
-font-size: 30px;
+font-size: 180%;
 line-height: 58px;
 
 align-items: center;
 text-align: center;
 
 color: #232323;
+}
+
+#email_login{
+margin-top: 10%;
+}
+.error{
+  margin-left: 10%;
 }

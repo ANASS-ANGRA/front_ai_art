@@ -1,32 +1,35 @@
 #principale{
 position: absolute;
-width: 750px;
+width: 94%;
 height: 718px;
-left: 30px;
+left: 3%;
 top: 175px;
+
+display: flex;
+flex-direction: row;
 }
 
 #text_accueil_principale{
  background-color:  #232323;
  position: absolute;
-width: 750px;
+width: 60%;
 height: 718px;
 font-family: 'Itim';
 font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 31px;
+font-weight: 200%;
+font-size: 160%;
+line-height: 100%;
 display: flex;
 align-items: center;
 text-align: center;
 color: #15DBFB;
 }
 
+
 #image_principale{
- position: absolute;
-width: 508px;
-height: 718px;
-left: 750px;
+    margin-left: 60%;
+    width: 40%;
+    height: 718px;
 }
 
 .button_accueil_pricipale{
@@ -41,7 +44,7 @@ text-align: center;
     font-family: 'Itim';
 font-style: normal;
 font-weight: 400;
-font-size: 36px;
+font-size: 190%;
 line-height: 43px;
 align-items: center;
 letter-spacing: 0.05em;
