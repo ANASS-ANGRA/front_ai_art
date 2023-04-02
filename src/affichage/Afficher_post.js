@@ -13,13 +13,10 @@ function Afficher_post(){
       <div>
         <Nav_bar/>
         <div id="afficher_post">
-            <div id="recherche_afficher_post">
-              <input type="text" id="input_recherche_post" placeholder="recherche"/>
-            </div>
             <div id="tous_post">
-          <ImageList  variant="masonry" cols={3} gap={8}>
+          <ImageList  variant="masonry" cols={3} gap={8} >
               {image.map((item) => (
-                    <ImageListItem key={item.img}>
+                    <ImageListItem key={item.img} style={{ position: "static" }}>
                         <img
                           src={`${item}?w=161&fit=crop&auto=format`}
                           srcSet={`${item}?w=161&fit=crop&auto=format&dpr=2 2x`}

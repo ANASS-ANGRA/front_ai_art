@@ -20,7 +20,6 @@ function Nav_bar(){
                     <li>Tendance</li>
                     <li><Link to="/new_post">New post</Link></li>
                     <hr  id="hr_nav_bar"/>
-                    <li>Dark mod</li>
                     <li>langage</li>
                     <li>Profil</li>
                     <li>log out</li>
