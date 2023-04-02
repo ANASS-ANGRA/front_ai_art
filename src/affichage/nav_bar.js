@@ -29,7 +29,6 @@ function Nav_bar(){
             </div>
          
         </div>
-        <Outlet/>
     </div>
     )
 }

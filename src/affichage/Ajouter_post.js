@@ -4,6 +4,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import { useState } from "react"
 import MultipleValueTextInput from 'react-multivalue-text-input';
+import Nav_bar from "./nav_bar";
 
 function Ajouter_post() {
     const [selectedValues, setSelectedValues] = useState([]);
@@ -52,6 +53,8 @@ function Ajouter_post() {
   }
 
   return (
+    <div>
+      <Nav_bar/>
     <div id="ajouter_post">
       <h1>Ajouter post</h1>
       <form onSubmit={env} encType="multipart/form-data">
@@ -69,6 +72,7 @@ function Ajouter_post() {
       
         <button type="submit" id="button_post">Upload</button>
       </form>
+    </div>
     </div>
   );
 }

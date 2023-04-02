@@ -2,6 +2,7 @@ import axios from "axios"
 import { useState } from "react"
 import {  useNavigate } from "react-router-dom"
 import "./style/validation.css"
+import Title_accueil from "./Title_accueil"
 
 
 
@@ -29,7 +30,10 @@ function valide(){
 
 
     return(
+    <div>
+         <Title_accueil/>
         <div id="validation">
+            
             <h1>bonjour nom_user </h1>
             <h2>ecrire votre code de validation qui envoyer sur email :</h2>
             <input type="text" placeholder="code validation" value={code} onChange={(e)=>{setcode(e.target.value)}} /><br></br>
@@ -37,6 +41,7 @@ function valide(){
             <button onClick={valide}>valide</button>
             
 
+        </div>
         </div>
     )
 }

@@ -1,10 +1,13 @@
 import "./style/principale.css"
 import im from "../image/accueil_principale.jpg"
 import { Link } from "react-router-dom"
+import Title_accueil from "./Title_accueil"
 
 
 function Principale(){
     return(
+        <div>
+        <Title_accueil/>
         <div id="accueil_Principale">
             <div id="principale">
                 <div id="text_accueil_principale">
@@ -18,6 +21,7 @@ function Principale(){
                  </div>
                  <img src={im} id="image_principale" />
             </div>
+        </div>
         </div>
     )
 }

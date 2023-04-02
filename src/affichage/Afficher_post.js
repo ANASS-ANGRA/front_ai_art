@@ -2,6 +2,7 @@ import { ImageList ,ImageListItem} from "@mui/material"
 import axios from "axios"
 import { useEffect, useState } from "react"
 import"./style/afficher_post.css"
+import Nav_bar from "./nav_bar"
 
 
 function Afficher_post(){
@@ -9,6 +10,8 @@ function Afficher_post(){
 
 
     return(
+      <div>
+        <Nav_bar/>
         <div id="afficher_post">
             <div id="recherche_afficher_post">
               <input type="text" id="input_recherche_post" placeholder="recherche"/>
@@ -26,6 +29,7 @@ function Afficher_post(){
                 ))}
               </ImageList>
             </div>
+        </div>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import axios from "axios"
 import { useState } from "react"
 import "./style/inscri.css"
 import { useNavigate } from "react-router-dom"
+import Title_accueil from "./Title_accueil"
 
 
 function Inscri(){
@@ -81,6 +82,8 @@ function Inscri(){
   }
 
   return (
+    <div>
+     <Title_accueil/>
     <form onSubmit={handleSubmit} id="page_inscri">
       <div className="info_inscri" id="nom">
         <label>Nom Complet :</label><br></br>
@@ -109,6 +112,7 @@ function Inscri(){
     </div>
    <button id="button_inscri" >inscription</button> 
    </form> 
+   </div>
   )
 
 } 

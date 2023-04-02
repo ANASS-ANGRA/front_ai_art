@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./style/login.css"
 import axios from "axios"
+import Title_accueil from "./Title_accueil"
 
 
 function Login(){
@@ -44,6 +45,8 @@ function Login(){
 
 
     return(
+      <div>
+      <Title_accueil/>
         <div id="login">
             <div id="page_login">
                 <div className="info_login" id="email_login">
@@ -60,6 +63,7 @@ function Login(){
                     <button className="button_cn" onClick={log}>connection</button>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

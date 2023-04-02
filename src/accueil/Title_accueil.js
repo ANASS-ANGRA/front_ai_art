@@ -8,13 +8,13 @@ function Title_accueil(){
         <div id="T_accueil">
           <h1>Ai_art</h1>
           <ul>
-            <li><Link to="inscri">inscription</Link>  </li>
-            <li><Link to="/login">connection</Link> </li>
+            <li><Link to="/accueil/inscri">inscription</Link>  </li>
+            <li><Link to="/accueil/login">connection</Link> </li>
             <li><Link to="/accueil">accueil</Link> </li>
           </ul>
-          <Outlet/>
         </div>
         </div>
+
     )
 }
 
